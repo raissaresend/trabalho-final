@@ -1,0 +1,295 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+	position: relative;
+}
+
+.new {
+	width: 100%
+}
+
+.video {
+	text-align: center;
+	padding: 40px;
+}
+
+#texto {
+	position: absolute;
+	font-size: 32px;
+	left: 226px;
+	top: 31px;
+	box-sizing: border-box;
+	border: 1.8px solid #000;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+}
+
+.titulo-centralizado:first-line {
+text-decoration:underline;
+}
+
+p {
+	text-align: center;
+}
+
+i {
+	color: #FFFF00;
+	font-style: italic;
+}
+
+/*DEFINICOES PAGINA ROUPAS */
+
+header {
+	background: #181818;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 90px;
+	right: 40px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav li ul {
+	position: absolute;
+	top: 36px;
+	right: 20px;
+	padding: 0px 0px;
+	background-color: #181818;
+	display: none; 
+}
+
+nav li:hover ul {
+	display: block;
+}
+
+nav li ul li	{
+	display: block;
+	width: 200px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f5d106;
+	text-decoration: underline;
+}
+
+nav a:active {
+	color: #1606f5;
+	text-decoration: underline;
+}
+
+/*categorias*/
+
+.categorias {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.categorias li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 9px;
+	box-sizing: border-box;
+	border: 1.8px solid #000;
+}
+
+.categorias li:hover {
+	border-color: #f5d106;
+}
+
+.categorias li:active {
+	border-color:#1606f5;
+}
+
+.categorias h2 {
+	font-size: 25px;
+}
+
+.imagemroupas {
+	opacity: 0.5;
+	transition: 400ms;
+	box-shadow: 10px 10px 5px  #000000
+}
+.imagemroupas:hover {
+	opacity: 1;
+}
+
+.imagemskate {
+	opacity: 0.5;
+	transition: 400ms;
+	box-shadow: 10px 10px 5px  #000000
+}
+.imagemskate:hover {
+	opacity: 1;
+}
+
+.imagemcalcados {
+	opacity: 0.5;
+	transition: 400ms;
+	box-shadow: 10px 10px 5px  #000000
+}
+.imagemcalcados:hover {
+	opacity: 1;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*sobre nos*/
+
+.principal {
+	box-sizing: border-box;
+	border: 0.5px #9999995b;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px  #999999	
+}
+.sobre {
+	border-radius:15px;
+	background: linear-gradient(#CCCCCC, white);
+	padding: 30px;
+	padding-left: 20px;
+}
+
+.ajuda {
+	background: linear-gradient(#CCCCCC, white);
+	padding: 5%;
+	padding-left: 20px;
+	padding-bottom: 15px;
+    padding-top: 15px;
+	background: linear-gradient(white, #CCCCCC);
+}
+
+.lista-ajuda {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.titulo-secundario {
+	text-align: left;
+}
+
+.itens {
+	font-style: italic;
+	list-style-type: none;	
+}
+
+.itens:before {
+	content: "➬ ";
+	color: #FFFF00;
+}
+
+.mapa {
+	text-align: center;
+	padding: 3em 30px;
+	padding-top: 10px;
+	background: linear-gradient(#CCCCCC, white);
+}
+
+table {
+	margin: 10px 0 40px 348px;
+	padding: 0 0 40px;
+}
+
+thead {
+	background: #f5d106;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 20px;
+}
+/*rodape*/
+
+footer {
+	background: #000000;
+	margin: 0 auto;
+}
+
+.newsletter {
+	color: #FFFFFF;
+	font-size: 13px;
+	display: inline;
+}
+
+form {
+	float: right;
+	margin-top: 50px;
+	right: 50px;
+	position:relative;
+}
+
+.input-padrao {
+	margin: 0 0 10px;
+	padding: 8px 5px;
+	width: 75%;
+}
+
+.assinar {
+	width: 20%;
+	padding: 10px 0;
+	background: rgb(250, 195, 13);
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	border: none;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.assinar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+@media screen and (max-width: 480px) {
+
+	main, .caixa, .principal, .home, .categorias, .imagemcalcados, .imagemroupas, .imagemskate .ajuda, .mapa, .video {
+		width: auto;
+	}
+
+	h1 {	
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-ajuda{
+		width: 100%;
+	}
+}
